@@ -1,16 +1,7 @@
 library(data.table)
 library(dplyr)
 library(stringr)
-
 project_path <- getwd()
-#loading Data:
-
-url <-
-  "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, file.path(project_path, "UCI_HAR_Dataset.zip"))
-unzip(zipfile = "UCI_HAR_Dataset.zip")
-
-
 
 features <-
   fread(
